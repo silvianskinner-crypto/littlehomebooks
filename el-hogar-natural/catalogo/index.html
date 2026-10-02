@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo · El Hogar Natural</title>
+<meta name="description" content="Catálogo · El Hogar Natural">
+<link rel="canonical" href="https://littlehomebooks.com/el-hogar-natural/catalogo/">
+<meta name="theme-color" content="#1E4A3B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/store.css?v=1">
+</head>
+<body>
+<div class="ticker" role="note" aria-label="80 Remedios Caseros + garantía de 7 días · Libros digitales · Llegan a tu correo tras el pago · El Hogar Natural · Bienestar para tu día a día">
+  <div class="ticker-track" aria-hidden="true">
+    <span class="ticker-set">80 Remedios Caseros + garantía de 7 días<i>·</i>Libros digitales · Llegan a tu correo tras el pago<i>·</i>El Hogar Natural · Bienestar para tu día a día<i>·</i></span>
+    <span class="ticker-set dup">80 Remedios Caseros + garantía de 7 días<i>·</i>Libros digitales · Llegan a tu correo tras el pago<i>·</i>El Hogar Natural · Bienestar para tu día a día<i>·</i></span>
+    <span class="ticker-set dup">80 Remedios Caseros + garantía de 7 días<i>·</i>Libros digitales · Llegan a tu correo tras el pago<i>·</i>El Hogar Natural · Bienestar para tu día a día<i>·</i></span>
+    <span class="ticker-set dup">80 Remedios Caseros + garantía de 7 días<i>·</i>Libros digitales · Llegan a tu correo tras el pago<i>·</i>El Hogar Natural · Bienestar para tu día a día<i>·</i></span>
+    <span class="ticker-set dup">80 Remedios Caseros + garantía de 7 días<i>·</i>Libros digitales · Llegan a tu correo tras el pago<i>·</i>El Hogar Natural · Bienestar para tu día a día<i>·</i></span>
+    <span class="ticker-set dup">80 Remedios Caseros + garantía de 7 días<i>·</i>Libros digitales · Llegan a tu correo tras el pago<i>·</i>El Hogar Natural · Bienestar para tu día a día<i>·</i></span>
+  </div>
+</div>
+<header class="top"><div class="wrap">
+  <nav class="menu"><a href="/el-hogar-natural/">Inicio</a><a href="/el-hogar-natural/catalogo/" aria-current="page">Catálogo</a><a href="/el-hogar-natural/contacto/">Contacto</a></nav>
+  <a class="brand" href="/el-hogar-natural/"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 36c0-9 3-17 12-24-1 11-5 19-12 24z" fill="currentColor"/><path d="M20 36C20 27 17 19 8 12c1 11 5 19 12 24z" fill="currentColor" opacity=".7"/><path d="M6 33c5-2 10-2 14 3 4-5 9-5 14-3" stroke="currentColor" stroke-width="2" fill="none"/></svg><span>El Hogar Natural</span></a>
+  <span class="spacer" aria-hidden="true"></span>
+</div></header>
+<main>
+<section class="block"><div class="wrap"><h1 class="pagetitle">Catálogo</h1><p class="count">2 productos</p><div class="catalog"><a class="prodcard" href="/remedios-caseros/"><div class="pic"><img src="/remedios-caseros/portada.jpg" alt="" loading="lazy"></div><h3>80 Remedios Caseros</h3><p class="pp">US$ 9,99</p></a><div class="prodcard dim"><div class="pic"><span class="ph">La Cocina de Mateo</span></div><h3>La Cocina de Mateo</h3><p class="pp">Muy pronto</p></div></div></div></section>
+</main>
+<footer><div class="wrap"><p>Estos libros tienen fines únicamente educativos e informativos. Los remedios descritos son medidas caseras tradicionales de alivio y bienestar, no tratamientos médicos, y no están destinados a diagnosticar, tratar, curar ni prevenir ninguna enfermedad. Consulta siempre a un profesional de la salud.</p><p>Mateo Rivas es un personaje de ficción creado con inteligencia artificial y el anfitrión de esta colección.</p><p><a href="/el-hogar-natural/contacto/">Contacto</a> · <a href="mailto:mateo@littlehomebooks.com">mateo@littlehomebooks.com</a></p><p class="copy">© 2026 El Hogar Natural · Venta procesada de forma segura por Hotmart.</p></div></footer>
+<script>
+function orderChoice(){ return 'livro'; }
+/* Mapa da visita (GoatCounter): até onde rolou, quanto tempo ficou, se saiu sem clicar. */
+(function(){
+  var P = document.documentElement.getAttribute('data-mapa') || 'pagina';
+  var enviados = {}, ultima = 'topo', clicou = false, seg = 0;
+  function conta(nome){
+    if (enviados[nome]) return; enviados[nome] = 1;
+    var tenta = function(n){
+      if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({path: P + '-' + nome, title: nome, event: true});
+      else if (n < 20) setTimeout(function(){ tenta(n + 1); }, 500);
+    };
+    tenta(0);
+  }
+  var hs = document.querySelectorAll('section h2');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return;
+        var i = e.target.getAttribute('data-i');
+        ultima = 'secao' + i;
+        conta('viu-secao' + i);
+        obs.unobserve(e.target);
+      });
+    }, {threshold: 0.6});
+    hs.forEach(function(h, i){ var n = (i + 1 < 10 ? '0' : '') + (i + 1); h.setAttribute('data-i', n); obs.observe(h); });
+  }
+  var marcos = {10:'tempo-10s', 30:'tempo-30s', 60:'tempo-1min', 120:'tempo-2min', 300:'tempo-5min'};
+  setInterval(function(){
+    if (document.visibilityState !== 'visible') return;
+    seg++; if (marcos[seg]) conta(marcos[seg]);
+  }, 1000);
+  /* "Clicou" = foi para o pagamento (botões .js-buy). Os botões que só descem até a caixa não contam. */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a.js-buy');
+    if (a) { clicou = true; conta('escolheu-' + orderChoice()); }
+  }, true);
+  window.addEventListener('pagehide', function(){
+    if (!clicou) conta('saiu-sem-clicar-na-' + ultima);
+  });
+})();
+
+</script>
+<script data-goatcounter="https://littlehomebooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

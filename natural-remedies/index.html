@@ -1,420 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" data-mapa="ruby">
+<html data-mapa="ruby" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>80 Natural Remedies for Everyday Comfort · Ruby Mae</title>
-<meta name="description" content="80 gentle home remedies for everyday comfort, with ingredients from your kitchen. Ruby Mae's digital book (PDF) you download right away, read on your phone or print.">
+<meta name="description" content="80 gentle home remedies for everyday comfort, with ingredients from your kitchen. Ruby Mae’s digital book (PDF).">
 <link rel="canonical" href="https://littlehomebooks.com/natural-remedies/">
-<meta name="theme-color" content="#1F3D2B">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Little Home Books">
-<meta property="og:url" content="https://littlehomebooks.com/natural-remedies/">
-<meta property="og:title" content="80 Natural Remedies for Everyday Comfort">
-<meta property="og:description" content="Grandmother's remedies with ingredients you already have. Nothing strange, nothing expensive.">
-<meta property="og:image" content="https://littlehomebooks.com/natural-remedies/ruby.jpg">
-<meta property="og:image:width" content="940">
-<meta property="og:image:height" content="1400">
-<meta property="og:image:alt" content="Ruby Mae in her kitchen holding the book 80 Natural Remedies for Everyday Comfort">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<style>
-  :root{
-    --cream:#FBF5E6;      /* page background */
-    --green:#1F3D2B;      /* top strip, headings, footer */
-    --terracotta:#B8502A; /* BUY BUTTONS ONLY */
-    --terracotta-dark:#9C4222; /* buy button hover only */
-    --gold:#B8892E;       /* lines, small labels */
-    --text:#2B2B26;       /* body text */
-    --box:#F3E8CC;        /* order box */
-    --line:#E2D4AC;
-    --soft:#4A4A40;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  [hidden]{display:none !important}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--cream);font-size:19px;line-height:1.6;overflow-wrap:break-word}
-  img{max-width:100%;height:auto;display:block}
-  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--green);line-height:1.2;font-weight:bold}
-  a{color:var(--green)}
-  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
-  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
-  .eyebrow{font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);font-weight:bold}
-  .eyebrow:after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin:10px 0 0}
-  .center .eyebrow:after{margin-left:auto;margin-right:auto}
-
-  /* 1. TICKER */
-  .ticker{background:var(--green);color:var(--cream);overflow:hidden;white-space:nowrap;font-size:16px;line-height:1.3}
-  .ticker-track{display:inline-flex;animation:tick 48s linear infinite;will-change:transform}
-  .ticker:hover .ticker-track{animation-play-state:paused}
-  .ticker-set{display:inline-block;padding:11px 0}
-  .ticker-set i{font-style:normal;color:#E3C16F;padding:0 14px}
-  @keyframes tick{to{transform:translateX(-50%)}}
-  @media (prefers-reduced-motion:reduce){
-    html{scroll-behavior:auto}
-    .ticker{white-space:normal;text-align:center}
-    .ticker-track{animation:none;display:block}
-    .ticker-set{padding:10px 16px}
-    .ticker-set.dup{display:none}
-    .ticker-set i:last-child{display:none}
-  }
-
-  /* BUY BUTTON (the only terracotta thing on the page) */
-  a.btn-buy{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:520px;min-height:68px;margin:0 auto;padding:16px 20px;background:var(--terracotta);color:#fff;text-decoration:none;text-align:center;font-weight:bold;font-size:22px;line-height:1.25;border-radius:12px;box-shadow:0 6px 16px rgba(43,43,38,.22);transition:background .15s,transform .15s}
-  a.btn-buy:hover{background:var(--terracotta-dark);transform:translateY(-1px)}
-  a.btn-buy:focus-visible{outline:4px solid var(--green);outline-offset:3px}
-  a.btn-buy small{display:block;font-size:15px;font-weight:normal;margin-top:3px}
-  .trust{font-size:18px;color:var(--soft);margin-top:14px;text-align:center}
-  .trust b{color:var(--green)}
-
-  /* 2. HERO */
-  .hero{padding:34px 0 44px}
-  .hero h1{font-size:31px;margin:16px 0 14px}
-  .hero .also{font-family:Georgia,serif;font-size:21px;color:var(--green);font-style:italic;margin-bottom:14px}
-  .hero .sub{font-size:19px;margin-bottom:22px}
-  .hero-photo{margin:28px auto 0;max-width:380px}
-  .hero-photo img{border-radius:14px;box-shadow:0 16px 38px rgba(31,61,43,.28)}
-  .video-slot{margin:0 0 18px}
-  .video-slot video,.video-slot iframe{width:100%;border-radius:14px;display:block}
-
-  /* SECTIONS */
-  section{padding:46px 0;border-top:1px solid var(--line)}
-  section h2{font-size:27px;margin:12px 0 18px}
-  .center{text-align:center}
-  .lead{font-size:19px;max-width:640px;margin:0 auto 22px}
-
-  /* 3. WHAT YOU'LL MAKE */
-  .make{list-style:none;max-width:680px;margin:0 auto}
-  .make li{background:#fff;border-left:5px solid var(--gold);border-radius:8px;padding:16px 18px;margin:12px 0;box-shadow:0 3px 10px rgba(43,43,38,.05)}
-
-  /* 4. NUMBERS */
-  .numbers{background:var(--green);color:var(--cream);padding:30px 0;border-top:0}
-  .numbers ul{list-style:none;display:grid;grid-template-columns:1fr;gap:18px;text-align:center}
-  .numbers b{display:block;font-family:Georgia,serif;font-size:50px;line-height:1;color:#E3C16F}
-  .numbers span{display:block;font-size:18px;margin-top:6px}
-
-  /* 5. WHO AM I */
-  .who p{max-width:680px;margin:0 auto 16px}
-  .who .sign{font-family:Georgia,serif;font-style:italic;color:var(--green);font-size:21px;margin-top:6px}
-
-  /* 6. WHAT'S INSIDE */
-  .inside{max-width:720px;margin:0 auto}
-  .row{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:10px;padding:16px 18px;margin:12px 0;box-shadow:0 3px 10px rgba(43,43,38,.05)}
-  .row .n{font-family:Georgia,serif;font-size:30px;line-height:1;color:var(--gold);font-weight:bold;min-width:30px}
-  .row h3{font-size:21px;margin-bottom:4px}
-  .row h3 span{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:15px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);white-space:nowrap;margin-left:4px}
-  .row p{font-size:18px}
-  .video-row{border:2px solid var(--gold);background:var(--cream)}
-  .video-row .n{font-size:15px;letter-spacing:1px;text-transform:uppercase;min-width:0;line-height:1.3}
-  .every{max-width:720px;margin:26px auto 28px;list-style:none}
-  .every li{position:relative;padding:7px 0 7px 32px}
-  .every li:before{content:"\2713";position:absolute;left:0;top:5px;color:var(--green);font-weight:bold;font-size:21px}
-
-  /* 7. ORDER BOX */
-  .order-box{background:var(--box);border:2px dashed var(--gold);border-radius:16px;padding:26px 16px 28px;max-width:760px;margin:0 auto}
-  .order-box h2{margin-top:0;text-align:center}
-  .opts{display:grid;grid-template-columns:1fr;gap:18px;margin:6px 0 24px}
-  .opt{position:relative;display:grid;grid-template-columns:88px minmax(0,1fr);min-width:0;gap:12px;align-items:center;background:var(--cream);border:2px solid #CDBB8A;border-radius:12px;padding:14px 14px 14px 12px;cursor:pointer;min-height:132px}
-  .opt input{position:absolute;opacity:0;width:1px;height:1px}
-  .opt img{border-radius:8px;width:88px;height:88px;object-fit:cover}
-  .opt-body{display:block}
-  .opt-name{display:block;padding-right:34px;font-family:Georgia,serif;font-weight:bold;color:var(--green);font-size:21px;line-height:1.2}
-  .opt-desc{display:block;font-size:16px;line-height:1.4;margin:5px 0 6px;color:var(--text)}
-  .opt-price{display:block;font-family:Georgia,serif;font-weight:bold;color:var(--green);font-size:26px;line-height:1.1;white-space:nowrap}
-  .opt-price s{font-size:18px;font-weight:normal;color:var(--soft);margin-right:6px}
-  .opt-dot{position:absolute;top:14px;right:12px;width:26px;height:26px;border-radius:50%;border:2px solid var(--green);background:#fff}
-  .opt-save{position:absolute;top:-13px;left:12px;background:var(--green);color:var(--cream);font-size:13px;font-weight:bold;letter-spacing:1.5px;padding:4px 12px;border-radius:20px;line-height:1.3}
-  .opt.is-on{border:3px solid var(--green);background:#fff;box-shadow:0 8px 20px rgba(31,61,43,.16);padding:13px 13px 13px 11px}
-  .opt.is-on .opt-dot{background:radial-gradient(circle,var(--green) 0 48%,#fff 52%)}
-  .opt:focus-within{outline:4px solid var(--gold);outline-offset:3px}
-  .once{font-family:Georgia,serif;font-style:italic;color:var(--green);font-size:19px;text-align:center;margin-top:6px}
-  .guarantee{display:flex;gap:16px;align-items:center;max-width:760px;margin:24px auto 0;background:#fff;border:2px solid var(--gold);border-radius:14px;padding:18px}
-  .seal{flex:0 0 auto;width:84px;height:84px;border-radius:50%;border:3px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--green);line-height:1.1}
-  .seal b{font-family:Georgia,serif;font-size:32px;line-height:1}
-  .guarantee h3{font-size:21px;margin-bottom:4px}
-  .guarantee p{font-size:18px}
-  .support{font-size:18px;color:var(--soft);text-align:center;max-width:640px;margin:18px auto 0}
-  .support a{display:inline-block;padding:12px 0}
-
-  /* 9. FAQ */
-  .faq{max-width:720px;margin:0 auto}
-  .faq details{background:#fff;border-radius:10px;margin:12px 0;box-shadow:0 3px 10px rgba(43,43,38,.05)}
-  .faq summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;padding:14px 18px;font-family:Georgia,serif;font-weight:bold;color:var(--green);font-size:20px;line-height:1.3}
-  .faq summary::-webkit-details-marker{display:none}
-  .faq summary:after{content:"+";font-size:28px;line-height:1;color:var(--gold);flex:0 0 auto}
-  .faq details[open] summary:after{content:"\2212"}
-  .faq summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:10px}
-  .faq details p{padding:0 18px 18px;font-size:18px}
-
-  /* 10. ALSO */
-  .also-card{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;max-width:620px;margin:0 auto;background:#fff;border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(43,43,38,.08);text-align:left}
-  .also-card img{border-radius:6px;box-shadow:0 6px 14px rgba(43,43,38,.2)}
-  .also-card h3{font-size:21px;margin-bottom:6px}
-  .also-card p{font-size:18px;margin-bottom:10px}
-  a.btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:10px 18px;border:2px solid var(--green);border-radius:10px;color:var(--green);font-weight:bold;text-decoration:none;font-size:18px}
-  a.btn-ghost:hover{background:var(--green);color:var(--cream)}
-
-  /* 11. FINAL + FOOTER */
-  .final{padding-bottom:54px}
-  .pick{font-size:18px;text-align:center;margin-top:8px}
-  .pick a{display:inline-block;padding:12px 0}
-  footer{background:var(--green);color:var(--cream);font-size:16px;line-height:1.6;padding:34px 0 40px;text-align:center}
-  footer p{max-width:680px;margin:0 auto 14px}
-  footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 6px;margin:8px 0 12px}
-  footer nav a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:48px;padding:0 8px;color:var(--cream);font-weight:bold}
-  footer .copy{margin-bottom:0;color:#E3C16F}
-
-  @media (min-width:720px){
-    body{font-size:20px}
-    .hero{padding:52px 0 60px}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
-    .hero h1{font-size:44px}
-    .hero .also{font-size:24px}
-    .hero .sub{font-size:21px}
-    .hero a.btn-buy{margin-left:0}
-    .hero-photo{margin:0;max-width:none}
-    section{padding:62px 0}
-    section h2{font-size:34px}
-    .numbers{padding:38px 0}
-    .numbers ul{grid-template-columns:repeat(3,1fr)}
-    .order-box{padding:36px 30px 38px}
-    .opts{grid-template-columns:1fr 1fr;gap:20px}
-    .opt{grid-template-columns:1fr;text-align:center;padding:22px 18px;align-content:start}
-    .opt.is-on{padding:21px 17px}
-    .opt img{width:210px;height:210px;margin:0 auto}
-    .opt-name{padding-right:0}
-    .opt-price{font-size:30px}
-    .opt-save{left:50%;transform:translateX(-50%);white-space:nowrap}
-    .also-card{grid-template-columns:150px 1fr;padding:24px;gap:24px}
-  }
-
-  /* Three choices in the order box */
-  .opt img.cover{object-fit:contain;background:var(--box)}
-  @media (min-width:720px){
-    .opts.three{grid-template-columns:1fr 1fr 1fr;gap:14px}
-    .opts.three .opt{padding:20px 12px}
-    .opts.three .opt.is-on{padding:19px 11px}
-    .opts.three .opt img{width:150px;height:150px}
-    .opts.three .opt-name{font-size:19px}
-    .opts.three .opt-desc{font-size:15px}
-    .opts.three .opt-price{font-size:26px}
-  }
-</style>
+<meta name="theme-color" content="#1E4A3B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Little Home Books"><meta property="og:url" content="https://littlehomebooks.com/natural-remedies/"><meta property="og:title" content="80 Natural Remedies for Everyday Comfort · Ruby Mae"><meta property="og:description" content="80 gentle home remedies for everyday comfort, with ingredients from your kitchen. Ruby Mae’s digital book (PDF)."><meta property="og:image" content="https://littlehomebooks.com/natural-remedies/ruby.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/store.css?v=1">
 </head>
 <body>
-
-<!-- 1. TICKER (facts only) -->
-<div class="ticker" role="note" aria-label="80 home remedies. Ingredients from your kitchen. A safety note on every one. Instant PDF download. Read on your phone or print.">
+<div class="ticker" role="note" aria-label="Ruby Mae’s books · Instant PDF download · Both books together · Save $4.90 · Little Home Books · Simple comfort from your kitchen">
   <div class="ticker-track" aria-hidden="true">
-    <span class="ticker-set">80 home remedies<i>·</i>Ingredients from your kitchen<i>·</i>A safety note on every one<i>·</i>Instant PDF download<i>·</i>Read on your phone or print<i>·</i></span>
-    <span class="ticker-set dup">80 home remedies<i>·</i>Ingredients from your kitchen<i>·</i>A safety note on every one<i>·</i>Instant PDF download<i>·</i>Read on your phone or print<i>·</i></span>
-    <span class="ticker-set dup">80 home remedies<i>·</i>Ingredients from your kitchen<i>·</i>A safety note on every one<i>·</i>Instant PDF download<i>·</i>Read on your phone or print<i>·</i></span>
-    <span class="ticker-set dup">80 home remedies<i>·</i>Ingredients from your kitchen<i>·</i>A safety note on every one<i>·</i>Instant PDF download<i>·</i>Read on your phone or print<i>·</i></span>
-    <span class="ticker-set dup">80 home remedies<i>·</i>Ingredients from your kitchen<i>·</i>A safety note on every one<i>·</i>Instant PDF download<i>·</i>Read on your phone or print<i>·</i></span>
-    <span class="ticker-set dup">80 home remedies<i>·</i>Ingredients from your kitchen<i>·</i>A safety note on every one<i>·</i>Instant PDF download<i>·</i>Read on your phone or print<i>·</i></span>
+    <span class="ticker-set">Ruby Mae’s books · Instant PDF download<i>·</i>Both books together · Save $4.90<i>·</i>Little Home Books · Simple comfort from your kitchen<i>·</i></span>
+    <span class="ticker-set dup">Ruby Mae’s books · Instant PDF download<i>·</i>Both books together · Save $4.90<i>·</i>Little Home Books · Simple comfort from your kitchen<i>·</i></span>
+    <span class="ticker-set dup">Ruby Mae’s books · Instant PDF download<i>·</i>Both books together · Save $4.90<i>·</i>Little Home Books · Simple comfort from your kitchen<i>·</i></span>
+    <span class="ticker-set dup">Ruby Mae’s books · Instant PDF download<i>·</i>Both books together · Save $4.90<i>·</i>Little Home Books · Simple comfort from your kitchen<i>·</i></span>
+    <span class="ticker-set dup">Ruby Mae’s books · Instant PDF download<i>·</i>Both books together · Save $4.90<i>·</i>Little Home Books · Simple comfort from your kitchen<i>·</i></span>
+    <span class="ticker-set dup">Ruby Mae’s books · Instant PDF download<i>·</i>Both books together · Save $4.90<i>·</i>Little Home Books · Simple comfort from your kitchen<i>·</i></span>
   </div>
 </div>
-
+<header class="top"><div class="wrap">
+  <nav class="menu"><a href="/ruby/">Home</a><a href="/ruby/catalog/">Catalog</a><a href="/ruby/contact/">Contact</a></nav>
+  <a class="brand" href="/ruby/"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 36c0-9 3-17 12-24-1 11-5 19-12 24z" fill="currentColor"/><path d="M20 36C20 27 17 19 8 12c1 11 5 19 12 24z" fill="currentColor" opacity=".7"/><path d="M6 33c5-2 10-2 14 3 4-5 9-5 14-3" stroke="currentColor" stroke-width="2" fill="none"/></svg><span>Little Home Books</span></a>
+  <span class="spacer" aria-hidden="true"></span>
+</div></header>
 <main>
-
-<!-- 2. HERO -->
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-text">
-      <p class="eyebrow">Ruby Mae · Natural Remedies · Digital book</p>
-      <h1>80 gentle home remedies with what is already in your kitchen</h1>
-      <p class="also">If you came here from my message, sugar, this is the book I told you about.</p>
-      <p class="sub">It is a digital book you get right away. Find how you feel, make the remedy tonight.</p>
-      <a class="btn-buy" href="#order" data-goatcounter-click="ruby-comprar-1">Get my book <small>Pay once · Instant download</small></a>
-    </div>
-    <div class="hero-photo">
-      <img src="ruby.jpg" width="940" height="1400" alt="Ruby Mae in her kitchen holding the book 80 Natural Remedies for Everyday Comfort" fetchpriority="high">
-    </div>
-  </div>
-</header>
-
-<!-- 3. WHAT IT IS FOR -->
-<section>
-  <div class="wrap center">
-    <p class="eyebrow">The little everyday things</p>
-    <h2>Does this sound familiar?</h2>
-    <ul class="make" style="text-align:left">
-      <li>You wake up at three in the morning and can't get back to sleep.</li>
-      <li>A meal sits heavy and your stomach won't settle.</li>
-      <li>Your legs feel tired and puffy by the end of the day.</li>
-      <li>Cold hands and feet, even when you're bundled up.</li>
-      <li>A dull headache, a scratchy throat, no energy in the morning.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 4. THREE NUMBERS -->
-<section class="numbers" aria-label="The book in three numbers">
-  <div class="wrap">
-    <ul>
-      <li><b>80</b><span>home remedies</span></li>
-      <li><b>7</b><span>sections, by how you feel</span></li>
-      <li><b>144</b><span>pages, with a safety note on every remedy</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- 5. WHAT'S INSIDE -->
-<section>
-  <div class="wrap">
-    <div class="center">
-      <p class="eyebrow">80 remedies · 7 sections</p>
-      <h2>What's inside</h2>
-    </div>
-    <div class="inside">
-      <div class="row"><span class="n">1</span><div><h3>Sleep &amp; Nighttime Calm</h3><p>Warm Chamomile Honey Tea · Chamomile-Lavender Foot Soak</p></div></div>
-      <div class="row"><span class="n">2</span><div><h3>Digestion After Meals</h3><p>Gentle Ginger Tea · Warm Cumin Water</p></div></div>
-      <div class="row"><span class="n">3</span><div><h3>Tired, Heavy Legs</h3><p>Cucumber-Lemon Water · Feet-Up Wall Rest</p></div></div>
-      <div class="row"><span class="n">4</span><div><h3>Warm Hands and Feet</h3><p>Golden Turmeric Milk · Warm-and-Cool Foot Soak</p></div></div>
-      <div class="row"><span class="n">5</span><div><h3>Morning Energy</h3><p>Morning Lemon Water · Banana Oat Morning Shake</p></div></div>
-      <div class="row"><span class="n">6</span><div><h3>Headaches &amp; Tension</h3><p>Pear and Cinnamon Water · Cool Forehead Compress</p></div></div>
-      <div class="row"><span class="n">7</span><div><h3>Cold Season</h3><p>Warm Honey-Lemon Water · Warm Thyme and Honey Tea</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 6. ORDER BOX + GUARANTEE -->
-<section id="order">
-  <div class="wrap">
-    <div class="order-box">
-      <h2 id="order-title">Choose your order</h2>
-      <div class="opts three" role="radiogroup" aria-labelledby="order-title">
-
-        <label class="opt" for="opt-cookbook">
-          <input type="radio" name="order" id="opt-cookbook" value="cookbook">
-          <img src="../ruby-kitchen/img/produto-receitas-600.jpg" width="600" height="600" loading="lazy" alt="The cookbook Ruby Mae's Kitchen standing on a wooden kitchen table">
-          <span class="opt-body">
-            <span class="opt-name">The cookbook</span>
-            <span class="opt-desc">Ruby Mae's Kitchen. 100 recipes, no wheat flour, no refined sugar.</span>
-            <span class="opt-price">$19.90</span>
-          </span>
-          <span class="opt-dot" aria-hidden="true"></span>
-        </label>
-
-        <label class="opt" for="opt-remedies">
-          <input type="radio" name="order" id="opt-remedies" value="remedies">
-          <img class="cover" src="portada.jpg" width="668" height="1000" loading="lazy" alt="Cover of 80 Natural Remedies for Everyday Comfort">
-          <span class="opt-body">
-            <span class="opt-name">The remedies book</span>
-            <span class="opt-desc">80 Natural Remedies for Everyday Comfort. 144 pages.</span>
-            <span class="opt-price">$9.90</span>
-          </span>
-          <span class="opt-dot" aria-hidden="true"></span>
-        </label>
-
-        <label class="opt is-on" for="opt-bundle">
-          <input type="radio" name="order" id="opt-bundle" value="bundle" checked>
-          <span class="opt-save">SAVE $4.90</span>
-          <img src="../ruby-kitchen/img/produto-pacote-600.jpg" width="600" height="600" loading="lazy" alt="Both books side by side on a kitchen table">
-          <span class="opt-body">
-            <span class="opt-name">Both books</span>
-            <span class="opt-desc">The remedies and the cookbook together. Two PDFs.</span>
-            <span class="opt-price"><span class="sr">Was </span><s>$29.80</s><span class="sr"> now </span>$24.90</span>
-          </span>
-          <span class="opt-dot" aria-hidden="true"></span>
-        </label>
-      </div>
-
-      <a class="btn-buy js-buy" href="#order" data-goatcounter-click="ruby-comprar-3"><span class="js-buy-label">Get both books · $24.90</span></a>
-      <p class="trust"><b>Pay once</b> · <b>Secure checkout</b> · <b>Instant download</b></p>
-      <p class="once">One payment. No subscription. Yours to keep.</p>
-    </div>
-
-    <div class="guarantee">
-      <div class="seal" aria-hidden="true"><b>30</b>days</div>
-      <div>
-        <h3>30-day money-back guarantee</h3>
-        <p>If the book is not for you, write to me within 30 days and you get your money back.</p>
-      </div>
-    </div>
-    <p class="support">Already ordered and your book has not turned up? Write to <a href="mailto:ruby@littlehomebooks.com">ruby@littlehomebooks.com</a>.</p>
-  </div>
-</section>
-
-<!-- 7. READER REVIEWS -->
-<!-- OWNER: reader reviews go here. -->
-
-<!-- 8. QUESTIONS -->
-<section>
-  <div class="wrap">
-    <div class="center">
-      <p class="eyebrow">Before you order</p>
-      <h2>Questions</h2>
-    </div>
-    <div class="faq">
-      <details><summary>Is this a printed book?</summary><p>No, sugar. It is a digital book, a PDF. Nothing comes in the mail. You read it on your phone, tablet or computer, or you print it at home.</p></details>
-      <details><summary>How do I get it?</summary><p>Tap the button and pay with your card. Your download is ready right after you pay. If it does not show up, write to ruby@littlehomebooks.com and I will send it to you.</p></details>
-      <details><summary>Are the ingredients hard to find?</summary><p>No. Most are already in your kitchen: honey, ginger, chamomile, lemon, oats, cinnamon, mint. Anything missing is at any grocery store.</p></details>
-      <details><summary>Is it safe if I take medication?</summary><p>The remedies are comfort measures, not medical treatments, and each one has a safety note. Check with your doctor or pharmacist before trying any of them, especially if you take medication, are pregnant or have a health condition. This book does not replace your doctor.</p></details>
-      <details><summary>Is Ruby a real person?</summary><p>Ruby Mae is a character created with artificial intelligence who presents the books of Little Home Books. The book and the safety notes were prepared and reviewed by the Little Home Books team.</p></details>
-      <details><summary>What if I don't like it?</summary><p>Write to ruby@littlehomebooks.com within 30 days and you get your money back.</p></details>
-    </div>
-  </div>
-</section>
-
-<!-- 9. FINAL BUY BUTTON -->
-<section class="final">
-  <div class="wrap center">
-    <p class="eyebrow">80 Natural Remedies</p>
-    <h2>Start with one remedy tonight</h2>
-    <a class="btn-buy js-buy" href="#order" data-goatcounter-click="ruby-comprar-4"><span class="js-buy-label">Get both books · $24.90</span></a>
-    <p class="trust"><b>Pay once</b> · <b>Secure checkout</b> · <b>Instant download</b></p>
-    <p class="pick">Want a different order? <a href="#order">Choose here</a>.</p>
-  </div>
-</section>
-
+<section class="prod" id="buy"><div class="wrap">
+<div class="gallery" aria-label="Inside the book">
+<div class="track">
+<div class="slide s-cover"><div class="b3d"><img src="/ruby-kitchen/img/capa-remedios.jpg" alt="Cover of 80 Natural Remedies for Everyday Comfort" fetchpriority="high"></div></div>
+<div class="slide s-spread"><div class="spread"><img src="img/page-11.jpg" alt="" loading="lazy"><img src="img/page-12.jpg" alt="" loading="lazy"></div><p class="cap"><strong>A look inside</strong> · Digital book · PDF</p></div>
+<div class="slide s-toc"><div class="paper"><h3>Contents</h3><ol><li><b>01</b><span>Sleep &amp; Nighttime Calm</span></li><li><b>02</b><span>Digestion After Meals</span></li><li><b>03</b><span>Tired, Heavy Legs</span></li><li><b>04</b><span>Warm Hands and Feet</span></li><li><b>05</b><span>Morning Energy</span></li><li><b>06</b><span>Headaches &amp; Tension</span></li><li><b>07</b><span>Cold Season</span></li></ol><p class="cap">The 7 sections in the book</p></div></div>
+<div class="slide s-info"><div class="paper"><div class="big">PDF</div><p class="l1">106 pages · Complete book</p><p class="l2">Instant download after you pay</p><p class="ls"><span>Read it on your phone, tablet or computer.</span><span>Save it and come back to it anytime.</span></p><p class="note">Digital product. Nothing is shipped.</p><div class="band">Your remedy book, always at hand</div></div></div>
+<div class="slide s-photo"><img src="ruby.jpg" alt="Ruby Mae holding the remedies book" loading="lazy"></div>
+</div>
+<div class="gnav"><button class="arrow prev" type="button" aria-label="Anterior">‹</button><div class="dots"><button class="dot" type="button" aria-label="1"></button><button class="dot" type="button" aria-label="2"></button><button class="dot" type="button" aria-label="3"></button><button class="dot" type="button" aria-label="4"></button><button class="dot" type="button" aria-label="5"></button></div><button class="arrow next" type="button" aria-label="Siguiente">›</button></div>
+</div>
+<div class="info"><p class="kicker">Ruby Mae · Natural remedies</p><h1>80 gentle home remedies with what is already in your kitchen</h1><p class="summary">Seven sections by how you feel, with clear measures and an honest safety note on every remedy.</p><p class="price"><span class="sr">Was </span><s>$14.90</s><span class="sr"> now </span>$9.90</p><p class="meta">106 pages · PDF · Instant download</p><div class="perk"><div class="seal" aria-hidden="true"><b>30</b>days</div><p><strong>30-day money-back guarantee.</strong> If the book is not for you, write to me and you get your money back.</p></div><label class="addon"><input type="checkbox" class="js-addon"><span class="box" aria-hidden="true"></span><img src="/ruby-kitchen/img/cover-flat.jpg" alt="" loading="lazy"><span class="atext"><strong>Add Ruby Mae’s Kitchen for $15.00</strong><span>Only with the remedies book · 100 recipes · 116-page PDF</span><span class="aprice"><s>$19.90</s> $15.00</span><span class="asave">You save $4.90.</span></span></label><a class="buy js-buy" href="https://buy.stripe.com/3cIeV6475aRBh0d5idcs802" data-goatcounter-click="ruby-comprar-1"><span class="js-label">Get my book · $9.90</span></a><p class="safe">Secure checkout · Card, Apple Pay, Google Pay · Price shown in your currency</p></div>
+</div></section>
+<section class="cards"><div class="wrap grid"><div class="card"><h2>What you’ll find</h2><ul><li>Remedies for sleep and nighttime calm.</li><li>Comfort for a heavy stomach after meals.</li><li>Ideas for tired legs and cold hands and feet.</li><li>Morning energy, headaches and cold season.</li></ul></div><div class="card"><h2>What’s included</h2><ul><li>The complete book as a PDF, 106 pages.</li><li>80 remedies in 7 sections, by how you feel.</li><li>An honest safety note on every remedy.</li><li>Read on your phone, tablet or computer.</li></ul></div><div class="card"><h2>Who it’s for</h2><p>For anyone who wants the old kitchen remedies written down in one place, with clear measures and nothing strange or expensive.</p></div><div class="card"><h2>How you get it</h2><p>Pay once and your download opens right away. Ruby also sends you an email with the download button. Nothing is shipped.</p></div></div></section>
+<section class="block center"><div class="wrap"><h2>Which book do I need?</h2><p class="sub">Ruby’s books, to read on your phone or print at home.</p><div class="books"><div class="book"><div class="pic"><img src="/ruby-kitchen/img/cover-flat.jpg" alt="" loading="lazy"></div><div class="body"><h3>Ruby Mae’s Kitchen</h3><p>100 easy home recipes made without wheat flour or refined sugar.</p><a href="/ruby-kitchen/">See the book · $19.90 →</a></div></div><div class="book"><div class="pic"><img src="/ruby-kitchen/img/capa-remedios.jpg" alt="" loading="lazy"></div><div class="body"><h3>80 Natural Remedies</h3><p>Old-fashioned home comforts with ingredients from your kitchen.</p><a href="/natural-remedies/">See the book · $9.90 →</a></div></div></div></div></section>
+<section class="block"><div class="wrap"><div class="bundle"><div class="covers"><img src="/ruby-kitchen/img/cover-flat.jpg" alt="" loading="lazy"><img src="/ruby-kitchen/img/capa-remedios.jpg" alt="" loading="lazy"></div><div><p class="kicker">Both books · One purchase</p><h2>All of Ruby’s books.<br>One purchase.</h2><p>The cookbook and the remedies book together, two PDFs.</p><ul><li>Ruby Mae’s Kitchen · 100 recipes</li><li>80 Natural Remedies</li></ul><p class="price"><s>$29.80</s> $24.90</p><p class="meta">Bought separately: $29.80. You save $4.90.</p><a class="buy" href="https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801" data-goatcounter-click="ruby-comprar-pacote">Get both books</a><p class="meta">2 PDF files · Instant download · Nothing is shipped</p></div></div></div></section>
+<section class="block"><div class="wrap"><h2 class="center">Questions</h2><div class="faq"><details><summary>Is this a printed book?</summary><p>No, sugar. It is a digital book, a PDF. Nothing comes in the mail.</p></details><details><summary>How do I get it?</summary><p>Right after you pay, a page opens with the download button, and Ruby sends you an email with the same button.</p></details><details><summary>Are the ingredients hard to find?</summary><p>No. Most are already in your kitchen: honey, ginger, chamomile, lemon, oats, cinnamon, mint.</p></details><details><summary>Is it safe if I take medication?</summary><p>The remedies are comfort measures, not medical treatments, and each one has a safety note. Check with your doctor or pharmacist first, especially if you take medication, are pregnant or have a health condition.</p></details><details><summary>Is Ruby a real person?</summary><p>Ruby Mae is a character created with artificial intelligence who presents the books of Little Home Books.</p></details><details><summary>What if I don’t like it?</summary><p>Write to ruby@littlehomebooks.com within 30 days and you get your money back.</p></details></div></div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <p>This book is for educational and informational purposes only. The remedies are traditional home comfort measures, not medical treatments, and are not intended to diagnose, treat, cure or prevent any disease. Always consult a healthcare professional.</p>
-    <p>Ruby Mae is a fictional character and the storytelling host of this collection.</p>
-    <nav aria-label="Footer">
-      <a href="mailto:ruby@littlehomebooks.com">Contact</a>
-      <a href="/refunds/">Refunds</a>
-      <a href="/terms/">Terms</a>
-      <a href="/privacy/">Privacy</a>
-    </nav>
-    <p class="copy">© 2026 Little Home Books</p>
-  </div>
-</footer>
-
+<footer><div class="wrap"><p>Ruby Mae is a fictional storytelling character created with artificial intelligence and the host of this collection. These books are not medical or nutrition advice. The recipes are made without wheat flour but are not certified gluten-free.</p><p><a href="/ruby/contact/">Contact</a> · <a href="mailto:ruby@littlehomebooks.com">ruby@littlehomebooks.com</a> · <a href="/refunds/">Refunds</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a></p><p class="copy">© 2026 Little Home Books</p></div></footer>
+<div class="bar"><div class="wrap"><div class="p"><span class="js-barprice">$9.90</span><small>+ 30-day money-back guarantee</small></div><a class="buy js-buy" href="https://buy.stripe.com/3cIeV6475aRBh0d5idcs802" data-goatcounter-click="ruby-comprar-barra"><span class="js-label">Get my book · $9.90</span></a></div></div>
 <script>
-/* =====================================================================
-   CHECKOUT LINKS. To change where the buy buttons go, swap the three
-   addresses on the next line. Nothing else on the page needs to change.
-   ===================================================================== */
-var CHECKOUT = { cookbook: "https://buy.stripe.com/7sY00ceLJ4td5hv5idcs800", remedies: "https://buy.stripe.com/3cIeV6475aRBh0d5idcs802", bundle: "https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801" };
-/* ===================================================================== */
 
-var BUY_LABEL = { cookbook: "Get the cookbook · $19.90", remedies: "Get my book · $9.90", bundle: "Get both books · $24.90" };
-
-/* Order box: the chosen card sets the label and the address of every .js-buy button. */
-function orderChoice(){
-  var r = document.querySelector('input[name="order"]:checked');
-  return (r && CHECKOUT[r.value]) ? r.value : 'bundle';
-}
-function syncOrder(){
-  var k = orderChoice();
-  document.querySelectorAll('input[name="order"]').forEach(function(r){
-    var card = r.closest('.opt');
-    if (card) card.classList.toggle('is-on', r.checked);
-  });
-  document.querySelectorAll('a.js-buy').forEach(function(a){
-    a.setAttribute('href', CHECKOUT[k]);
-    var l = a.querySelector('.js-buy-label');
-    if (l) l.textContent = BUY_LABEL[k];
-  });
-}
-document.querySelectorAll('input[name="order"]').forEach(function(r){ r.addEventListener('change', syncOrder); });
-window.addEventListener('pageshow', syncOrder);
-syncOrder();
-
+document.querySelectorAll('.gallery').forEach(function(g){
+  var t=g.querySelector('.track'), dots=[].slice.call(g.querySelectorAll('.dot'));
+  function idx(){ return Math.round(t.scrollLeft / t.clientWidth); }
+  function go(i){ var n=dots.length; i=(i+n)%n; t.scrollTo({left:i*t.clientWidth, behavior:'smooth'}); }
+  function mark(){ var i=idx(); dots.forEach(function(d,k){ d.classList.toggle('on', k===i); }); }
+  g.querySelector('.prev').addEventListener('click', function(){ go(idx()-1); });
+  g.querySelector('.next').addEventListener('click', function(){ go(idx()+1); });
+  dots.forEach(function(d,k){ d.addEventListener('click', function(){ go(k); }); });
+  t.addEventListener('scroll', function(){ window.requestAnimationFrame(mark); }); mark();
+});
+var LINKS={on:'https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801', off:'https://buy.stripe.com/3cIeV6475aRBh0d5idcs802'}, LABELS={on:'Get both books · $24.90', off:'Get my book · $9.90'};
+var BOX=document.querySelector('.js-addon');
+var BARP={on:'$24.90', off:'$9.90'};
+function orderChoice(){ return BOX && BOX.checked ? 'pacote' : 'livro'; }
+function syncAddon(){ var k=(BOX&&BOX.checked)?'on':'off'; document.querySelectorAll('a.js-buy').forEach(function(x){ x.href=LINKS[k]; var l=x.querySelector('.js-label'); if(l) l.textContent=LABELS[k]; }); var bp=document.querySelector('.js-barprice'); if(bp) bp.textContent=BARP[k]; }
+if(BOX){ BOX.addEventListener('change', syncAddon); window.addEventListener('pageshow', syncAddon); syncAddon(); }
 /* Mapa da visita (GoatCounter): até onde rolou, quanto tempo ficou, se saiu sem clicar. */
 (function(){
   var P = document.documentElement.getAttribute('data-mapa') || 'pagina';
@@ -454,6 +105,7 @@ syncOrder();
     if (!clicou) conta('saiu-sem-clicar-na-' + ultima);
   });
 })();
+
 </script>
 <script data-goatcounter="https://littlehomebooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
