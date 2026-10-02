@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="80 gentle home remedies for everyday comfort, with ingredients from your kitchen. Ruby Mae's book. Launch price US$ 14.90.">
+<meta name="description" content="80 gentle home remedies for everyday comfort, with ingredients from your kitchen. Ruby Mae's book. A digital book (PDF) for US$ 9.90.">
 <title>80 Natural Remedies for Everyday Comfort · Ruby Mae</title>
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="The Natural Home">
+<meta property="og:site_name" content="Little Home Books">
+<link rel="canonical" href="https://littlehomebooks.com/natural-remedies/">
 <meta property="og:url" content="https://littlehomebooks.com/natural-remedies/">
 <meta property="og:title" content="80 Natural Remedies for Everyday Comfort">
-<meta property="og:description" content="Ruby Mae's book. Grandmother's remedies with ingredients you already have. Nothing strange, nothing expensive. Today US$ 14.90.">
+<meta property="og:description" content="Ruby Mae's book. Grandmother's remedies with ingredients you already have. Nothing strange, nothing expensive. US$ 9.90.">
 <meta property="og:image" content="https://littlehomebooks.com/natural-remedies/ruby.jpg">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
@@ -113,6 +114,30 @@
   .barra .t s{opacity:.7}
   .barra .t b{font-size:19px;color:#f3d77a}
   .barra a{background:#f3d77a;color:var(--verde);text-decoration:none;font-weight:bold;padding:12px 18px;border-radius:8px;font-size:16px;white-space:nowrap}
+  /* ORDER BOX */
+  .order-box{background:#fff;border:2px dashed var(--dorado);border-radius:16px;padding:26px 16px 28px;max-width:760px;margin:0 auto;text-align:center}
+  .opts{display:grid;grid-template-columns:1fr;gap:18px;margin:14px 0 24px;text-align:left}
+  .opt{position:relative;display:grid;grid-template-columns:88px minmax(0,1fr);min-width:0;gap:12px;align-items:center;background:var(--crema);border:2px solid #cdbb8a;border-radius:12px;padding:14px 14px 14px 12px;cursor:pointer}
+  .opt input{position:absolute;opacity:0;width:1px;height:1px}
+  .opt img{border-radius:8px;width:88px;height:88px;object-fit:cover}
+  .opt-name{display:block;padding-right:34px;font-weight:bold;color:var(--verde);font-size:21px;line-height:1.2}
+  .opt-desc{display:block;font-size:16px;line-height:1.4;margin:5px 0 6px}
+  .opt-price{display:block;font-weight:bold;color:var(--verde);font-size:26px;line-height:1.1;white-space:nowrap}
+  .opt-price s{font-size:18px;font-weight:normal;color:var(--suave);margin-right:6px}
+  .opt-dot{position:absolute;top:14px;right:12px;width:26px;height:26px;border-radius:50%;border:2px solid var(--verde);background:#fff}
+  .opt-save{position:absolute;top:-13px;left:12px;background:var(--verde);color:var(--crema);font-size:13px;font-weight:bold;letter-spacing:1.5px;padding:4px 12px;border-radius:20px;line-height:1.3}
+  .opt.is-on{border:3px solid var(--verde);background:#fff;box-shadow:0 8px 20px rgba(23,61,23,.16);padding:13px 13px 13px 11px}
+  .opt.is-on .opt-dot{background:radial-gradient(circle,var(--verde) 0 48%,#fff 52%)}
+  .opt:focus-within{outline:4px solid var(--dorado);outline-offset:3px}
+  .order-box a.btn{display:block}
+  .once{font-style:italic;color:var(--suave);font-size:17px;margin-top:6px}
+  .also-card{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;max-width:620px;margin:0 auto;background:#fff;border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.08);text-align:left}
+  .also-card img{width:110px;height:110px;object-fit:cover;border-radius:8px}
+  .also-card h3{font-size:21px;margin-bottom:6px}
+  .also-card p{font-size:17px;color:var(--suave);margin-bottom:8px}
+  .also-card a{color:var(--verde);font-weight:bold}
+  footer a{color:#6b6a52}
+  @media(min-width:641px){ .order-box{padding:36px 30px 38px} .opts{grid-template-columns:1fr 1fr;gap:20px} .opt{grid-template-columns:1fr;text-align:center;padding:22px 18px;align-content:start} .opt.is-on{padding:21px 17px} .opt img{width:200px;height:200px;margin:0 auto} .opt-name{padding-right:0} .opt-save{left:50%;transform:translateX(-50%);white-space:nowrap} }
   /* FOOTER */
   footer{background:#efe6c9;color:#6b6a52;font-size:14px;line-height:1.55;text-align:center;padding:30px 0}
   footer .wrap{max-width:700px}
@@ -135,14 +160,14 @@
     <p class="sub">Your grandmother knew it. I spent years collecting them so they’d be in one place: <b>80 gentle home remedies</b> with what you already have in your kitchen.</p>
 
     <div class="precio">
-      <span class="tag">Launch price</span>
-      <div class="antes">Regular price <s>US$ 29.80</s></div>
-      <div class="hoy">US$ 14.90</div>
-      <div class="ahorro">One-time payment. You save US$ 14.90.</div>
+      <span class="tag">New price</span>
+      <div class="antes">Was <s>US$ 14.90</s></div>
+      <div class="hoy">US$ 9.90</div>
+      <div class="ahorro">One-time payment. No subscription.</div>
     </div>
 
-    <a class="btn" href="https://pay.hotmart.com/T107698113O?off=yu4z9ceg&offDiscount=LAUNCH" data-goatcounter-click="ruby-comprar-1">I want my book for US$ 14.90 <small>Instant access &middot; PDF to read on your phone or print</small></a>
-    <div class="trust">🔒 Secure checkout by Hotmart &nbsp;·&nbsp; 📩 In your inbox in minutes &nbsp;·&nbsp; ✔ 7-day money-back guarantee</div>
+    <a class="btn" href="#order" data-goatcounter-click="ruby-comprar-1">I want my book for US$ 9.90 <small>Instant download &middot; PDF to read on your phone or print</small></a>
+    <div class="trust">🔒 Secure checkout &nbsp;·&nbsp; ⬇ Instant download &nbsp;·&nbsp; ✔ 30-day money-back guarantee</div>
   </div>
 </div>
 
@@ -193,7 +218,7 @@
       <div class="row"><span class="n">7</span><div><b>Everyday Immune Support</b><span class="ej">Warm Honey-Lemon Water · Warm Thyme and Honey Tea · Careful Steam Bowl</span></div></div>
     </div>
     <div style="text-align:center;margin-top:28px">
-      <a class="btn" href="https://pay.hotmart.com/T107698113O?off=yu4z9ceg&offDiscount=LAUNCH" data-goatcounter-click="ruby-comprar-2">I want all 80 remedies for US$ 14.90</a>
+      <a class="btn" href="#order" data-goatcounter-click="ruby-comprar-2">I want all 80 remedies for US$ 9.90</a>
     </div>
   </div>
 </section>
@@ -216,45 +241,59 @@
     <h2>How it works</h2>
     <p class="lead">Three simple steps. That’s all.</p>
     <div class="pasos">
-      <div class="p"><div class="num">1</div><h3>Get your copy</h3><p>Tap the button and check out securely through Hotmart. It takes less than a minute, with card or PayPal.</p></div>
-      <div class="p"><div class="num">2</div><h3>Check your email</h3><p>Within minutes you get access to download the PDF and read it on your phone, tablet or computer. Print it if you like.</p></div>
+      <div class="p"><div class="num">1</div><h3>Get your copy</h3><p>Tap the button and check out securely. It takes less than a minute, with your card, Apple Pay or Google Pay.</p></div>
+      <div class="p"><div class="num">2</div><h3>Download your book</h3><p>Right after you pay, a page opens with the button to download the PDF. Read it on your phone, tablet or computer. Print it if you like.</p></div>
       <div class="p"><div class="num">3</div><h3>Start tonight</h3><p>Pick one remedy, go to the kitchen and make it. A warm chamomile honey tea is a good place to begin.</p></div>
     </div>
   </div>
 </section>
 
-<section class="oferta">
+<section class="oferta" id="order">
   <div class="wrap">
-    <h2>Take it home today</h2>
-    <div class="box">
-      <img src="portada.jpg" alt="Book cover">
-      <h3>80 Natural Remedies for Everyday Comfort</h3>
-      <div class="precio">
-        <span class="tag">Launch price</span>
-        <div class="antes">Regular price <s>US$ 29.80</s></div>
-        <div class="hoy">US$ 14.90</div>
-        <div class="ahorro">One-time payment. No subscription.</div>
+    <div class="order-box">
+      <h2 id="order-title">Choose your order</h2>
+      <div class="opts" role="radiogroup" aria-labelledby="order-title">
+        <label class="opt" for="opt-remedies">
+          <input type="radio" name="order" id="opt-remedies" value="remedies">
+          <img src="portada.jpg" loading="lazy" alt="Cover of 80 Natural Remedies for Everyday Comfort">
+          <span class="opt-body">
+            <span class="opt-name">Just this book</span>
+            <span class="opt-desc">80 Natural Remedies for Everyday Comfort. 144 pages, PDF.</span>
+            <span class="opt-price">$9.90</span>
+          </span>
+          <span class="opt-dot" aria-hidden="true"></span>
+        </label>
+        <label class="opt is-on" for="opt-bundle">
+          <input type="radio" name="order" id="opt-bundle" value="bundle" checked>
+          <span class="opt-save">SAVE $4.90</span>
+          <img src="../ruby-kitchen/img/produto-pacote-600.jpg" width="600" height="600" loading="lazy" alt="Both books side by side on a kitchen table: Ruby Mae's Kitchen and 80 Natural Remedies for Everyday Comfort">
+          <span class="opt-body">
+            <span class="opt-name">Both of Ruby's books</span>
+            <span class="opt-desc">This book plus Ruby Mae's Kitchen, my cookbook with 100 easy home recipes. Two PDFs.</span>
+            <span class="opt-price"><s>$29.80</s>$24.90</span>
+          </span>
+          <span class="opt-dot" aria-hidden="true"></span>
+        </label>
       </div>
-      <ul class="bullets">
-        <li>80 remedies in 7 sections, by everyday problem</li>
-        <li>Ingredients you already have at home</li>
-        <li>Clear measures and numbered steps</li>
-        <li>A safety note on every remedy</li>
-        <li>144-page PDF for any device, or print it</li>
-        <li>Yours to keep forever</li>
-      </ul>
-      <a class="btn" href="https://pay.hotmart.com/T107698113O?off=yu4z9ceg&offDiscount=LAUNCH" data-goatcounter-click="ruby-comprar-3">Buy now for US$ 14.90</a>
-      <div class="trust">🔒 Secure checkout by Hotmart &nbsp;·&nbsp; ✔ 7-day guarantee</div>
+      <a class="btn js-buy" href="#order" data-goatcounter-click="ruby-comprar-3"><span class="js-buy-label">Get both books · $24.90</span></a>
+      <div class="trust">🔒 <b>Pay once</b> &nbsp;·&nbsp; <b>Secure checkout</b> &nbsp;·&nbsp; <b>Instant download</b></div>
+      <p class="once">One payment. No subscription. Yours to keep.</p>
     </div>
-    <p class="comparacion">Less than one bottle of sleep aids. And this one keeps you company every night, not just one.</p>
+    <ul class="bullets" style="margin-top:26px">
+      <li>80 remedies in 7 sections, by everyday problem</li>
+      <li>Ingredients you already have at home</li>
+      <li>Clear measures and numbered steps</li>
+      <li>A safety note on every remedy</li>
+      <li>144-page PDF for any device, or print it</li>
+    </ul>
   </div>
 </section>
 
 <section class="garantia">
   <div class="wrap">
-    <div class="sello"><b>7</b>day guarantee</div>
+    <div class="sello"><b>30</b>day guarantee</div>
     <h2>If it isn’t for you, you get your money back</h2>
-    <p>Read the book, try two or three remedies. If within 7 days you feel it isn’t what you hoped for, request a refund through Hotmart and you get every penny back. No questions.</p>
+    <p>Read the book, try two or three remedies. If within 30 days you feel it isn’t what you hoped for, write to <a href="mailto:ruby@littlehomebooks.com" style="color:#f3d77a">ruby@littlehomebooks.com</a> and you get every penny back. No questions.</p>
   </div>
 </section>
 
@@ -262,15 +301,15 @@
   <div class="wrap">
     <h2>Questions? Ruby has answers</h2>
     <div class="faq">
-      <details><summary>How do I get the book?</summary><p>It’s a digital book (PDF). As soon as your purchase is confirmed, you get an email with access to download it and read it on your phone, tablet or computer. You can print it too.</p></details>
-      <details><summary>Can I pay from my country?</summary><p>Yes. The purchase goes through Hotmart, which accepts credit and debit cards, PayPal and local payment methods in the United States, Canada, the UK, Europe and most of Latin America.</p></details>
-      <details><summary>Is this a subscription?</summary><p>No. It’s a one-time payment of US$ 14.90. The book is yours forever.</p></details>
+      <details><summary>How do I get the book?</summary><p>It’s a digital book (PDF). Right after you pay, a page opens with the button to download it. Read it on your phone, tablet or computer. You can print it too. If it does not turn up, write to ruby@littlehomebooks.com and I will send it to you.</p></details>
+      <details><summary>Can I pay from my country?</summary><p>The checkout accepts the main credit and debit cards, Apple Pay and Google Pay, from most countries. The price is in U.S. dollars.</p></details>
+      <details><summary>Is this a subscription?</summary><p>No. It’s a one-time payment. The book is yours to keep.</p></details>
       <details><summary>Are the ingredients hard to find or expensive?</summary><p>No. Most are already in your kitchen: honey, ginger, chamomile, lemon, oats, cinnamon, mint. Anything missing is at any grocery store.</p></details>
       <details><summary>Is it safe if I take medication or have a health condition?</summary><p>The remedies are comfort measures, not medical treatments. Each one has a safety note. Always check with your doctor or pharmacist before trying any of them, especially if you take medication or have a health condition.</p></details>
       <details><summary>Does it replace my doctor?</summary><p>No. This book doesn’t diagnose, treat or cure any illness, and it never replaces your doctor or the medicine you’ve been prescribed. It’s a companion for the small discomforts of everyday life.</p></details>
-      <details><summary>Is Ruby a real person?</summary><p>Ruby Mae is a character created with artificial intelligence who presents the content of The Natural Home. The book, the recipes and the safety notes were prepared and reviewed by The Natural Home team.</p></details>
-      <details><summary>What if I don’t like it?</summary><p>You have a 7-day guarantee. Request a refund through Hotmart and you get all your money back.</p></details>
-      <details><summary>Is my payment secure?</summary><p>Yes. Payment is processed by Hotmart, an international platform that protects your data. We never see your card.</p></details>
+      <details><summary>Is Ruby a real person?</summary><p>Ruby Mae is a character created with artificial intelligence who presents the books of Little Home Books. The book, the recipes and the safety notes were prepared and reviewed by the Little Home Books team.</p></details>
+      <details><summary>What if I don’t like it?</summary><p>You have a 30-day guarantee. Write to ruby@littlehomebooks.com and you get all your money back.</p></details>
+      <details><summary>Is my payment secure?</summary><p>Yes. Payment is processed by a secure payment provider that protects your data. We never see your card.</p></details>
     </div>
   </div>
 </section>
@@ -279,25 +318,62 @@
   <div class="wrap">
     <h2>Start tonight</h2>
     <p class="lead">One simple remedy may be all you need to feel a little better.</p>
-    <a class="btn" href="https://pay.hotmart.com/T107698113O?off=yu4z9ceg&offDiscount=LAUNCH" data-goatcounter-click="ruby-comprar-4">I want my book for US$ 14.90 <small>Launch price &middot; Regular price US$ 29.80</small></a>
+    <a class="btn" href="#order" data-goatcounter-click="ruby-comprar-4">I want my book for US$ 9.90 <small>Or both of my books for US$ 24.90</small></a>
+  </div>
+</section>
+
+<section style="border-bottom:none">
+  <div class="wrap">
+    <h2>Readers also picked up</h2>
+    <p class="lead">My cookbook, for the kitchen side of things.</p>
+    <div class="also-card">
+      <img src="../ruby-kitchen/img/produto-receitas-600.jpg" width="600" height="600" loading="lazy" alt="The cookbook Ruby Mae's Kitchen standing on a kitchen table">
+      <div>
+        <h3>Ruby Mae’s Kitchen</h3>
+        <p>100 easy home recipes made without wheat flour and without refined sugar.</p>
+        <a href="/ruby-kitchen/">See the cookbook</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="marca">THE NATURAL HOME</div>
+    <div class="marca">LITTLE HOME BOOKS</div>
     <p>This book is for educational and informational purposes only. The remedies described are traditional home comfort measures, not medical treatments, and are not intended to diagnose, treat, cure or prevent any disease. Always consult a healthcare professional before trying any remedy, especially if you are pregnant or breastfeeding, take medication or have a health condition. In an emergency, call your local emergency number.</p>
-    <p style="margin-top:12px">© 2026 The Natural Home · Sale securely processed by Hotmart.</p>
+    <p style="margin-top:12px">Ruby Mae is a fictional character and the storytelling host of this collection.</p>
+    <p style="margin-top:12px"><a href="mailto:ruby@littlehomebooks.com">Contact</a> · <a href="/refunds/">Refunds</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a></p>
+    <p style="margin-top:12px">© 2026 Little Home Books</p>
   </div>
 </footer>
 
 <div class="barra">
-  <div class="t">80 Natural Remedies<br><s>US$ 29.80</s> <b>US$ 14.90</b></div>
-  <a href="https://pay.hotmart.com/T107698113O?off=yu4z9ceg&offDiscount=LAUNCH" data-goatcounter-click="ruby-comprar-5">Get my book</a>
+  <div class="t">80 Natural Remedies<br><s>US$ 14.90</s> <b>US$ 9.90</b></div>
+  <a href="#order" data-goatcounter-click="ruby-comprar-5">Get my book</a>
 </div>
 
 <script>
-/* Mapa da visita (GoatCounter): até onde rolou, quanto tempo ficou, se saiu sem clicar. */
+/* ============================================================
+   CHECKOUT LINKS. To change where the buy button goes, swap the
+   two addresses below. Nothing else needs to change.
+   ============================================================ */
+var CHECKOUT = { remedies: "https://buy.stripe.com/REPLACE_REMEDIES", bundle: "https://buy.stripe.com/REPLACE_BUNDLE" };
+var LABEL = { remedies: "Get my book · $9.90", bundle: "Get both books · $24.90" };
+(function(){
+  var radios = document.querySelectorAll('input[name="order"]');
+  function pick(){ var r = document.querySelector('input[name="order"]:checked'); return (r && CHECKOUT[r.value]) ? r.value : 'bundle'; }
+  function apply(){
+    var k = pick();
+    radios.forEach(function(r){ var c = r.closest('.opt'); if (c) c.classList.toggle('is-on', r.checked); });
+    document.querySelectorAll('a.js-buy').forEach(function(a){
+      a.setAttribute('href', CHECKOUT[k]);
+      var l = a.querySelector('.js-buy-label'); if (l) l.textContent = LABEL[k];
+    });
+  }
+  radios.forEach(function(r){ r.addEventListener('change', apply); });
+  apply();
+})();
+/* Visit map (GoatCounter): até onde rolou, quanto tempo ficou, se saiu sem clicar. */
 (function(){
   var P = document.documentElement.getAttribute('data-mapa') || 'pagina';
   var enviados = {}, ultima = 'topo', clicou = false, seg = 0;
@@ -328,7 +404,7 @@
     seg++; if (marcos[seg]) conta(marcos[seg]);
   }, 1000);
   document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href*="hotmart"]');
+    var a = e.target.closest && e.target.closest('a.js-buy');
     if (a) clicou = true;
   }, true);
   window.addEventListener('pagehide', function(){
@@ -336,6 +412,6 @@
   });
 })();
 </script>
-<script data-goatcounter="https://skinnerstudio.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://littlehomebooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
