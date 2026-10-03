@@ -210,3 +210,26 @@ footer .copy{opacity:.75}
 .book .pic img{position:relative;z-index:1;height:240px;border-radius:2px 5px 5px 2px;transform:perspective(900px) rotateY(-12deg);box-shadow:16px 18px 30px rgba(0,0,0,.45);transition:transform .3s ease}
 .book:hover .pic img{transform:perspective(900px) rotateY(-4deg) translateY(-4px)}
 .book .pic .ph{position:relative;z-index:1;color:var(--paper)}
+/* faixa: veio buscar o outro livro? */
+.switch{background:var(--card);border-bottom:1px solid var(--line);font-size:16px;text-align:center;padding:10px 0}
+.switch a{font-weight:700;color:var(--green)}
+/* início: os dois livros logo no topo */
+.choose{padding:28px 0 8px;text-align:center}
+.choose h1{font-size:30px;margin:8px auto 10px;max-width:760px;letter-spacing:-.4px}
+.choose .summary{max-width:620px;margin:0 auto 22px}
+.books.big a{display:block;background:var(--green);color:var(--paper);border-radius:10px;padding:13px 14px;text-decoration:none}
+.about img{display:block;width:180px;height:180px;object-fit:cover;object-position:50% 15%;border-radius:50%;margin:0 auto 14px;box-shadow:0 10px 24px rgba(30,74,59,.2)}
+@media (min-width:760px){.choose h1{font-size:44px}}
+@media (max-width:759px){
+ .books.big{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .books.big .pic{min-height:0;padding:16px 8px 22px}
+ .books.big .pic img{height:150px}
+ .books.big .pic:after{bottom:12px}
+ .books.big .body{padding:10px 8px 12px;gap:6px}
+ .books.big h3{font-size:16px}
+ .books.big p{font-size:13px;line-height:1.35}
+ .books.big a{font-size:14px;padding:10px 6px}
+ .choose .summary{font-size:16px;margin-bottom:16px}
+ .choose h1{font-size:26px}
+}
+@media (max-width:759px){.books.big a{font-size:13px;white-space:nowrap;letter-spacing:-.2px}}
