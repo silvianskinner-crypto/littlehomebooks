@@ -199,3 +199,14 @@ footer .copy{opacity:.75}
 }
 
 .perk + .perk .seal b{font-size:14px;letter-spacing:.5px}
+.s-photo img{object-position:50% 12%}
+/* foto da autora inteira, sem cortar */
+.s-photo{background:var(--paper)}
+.s-photo img{object-fit:contain;max-height:600px;object-position:50% 50%}
+/* cartões dos livros: capa em pé sobre fundo verde */
+.book .pic{position:relative;min-height:300px;padding:30px 22px 38px;background:radial-gradient(130% 95% at 50% 0%,#2f6655 0%,var(--green) 58%,#153a2d 100%);overflow:hidden}
+.book .pic:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(184,137,46,.22) 1px,transparent 1.5px);background-size:18px 18px;opacity:.6}
+.book .pic:after{content:"";position:absolute;left:50%;bottom:24px;width:58%;height:20px;transform:translateX(-50%);background:radial-gradient(ellipse at center,rgba(0,0,0,.5),transparent 70%)}
+.book .pic img{position:relative;z-index:1;height:240px;border-radius:2px 5px 5px 2px;transform:perspective(900px) rotateY(-12deg);box-shadow:16px 18px 30px rgba(0,0,0,.45);transition:transform .3s ease}
+.book:hover .pic img{transform:perspective(900px) rotateY(-4deg) translateY(-4px)}
+.book .pic .ph{position:relative;z-index:1;color:var(--paper)}
