@@ -71,6 +71,11 @@ a{color:var(--green)}
 .pick ul{list-style:none;display:grid;gap:8px}
 .pick li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:16px}
 .pick a{display:flex;align-items:center;min-height:48px;font-weight:700}
+/* 7 · botão fixo no celular */
+.fix{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(0,0,0,.08);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.fix a{display:flex;align-items:center;justify-content:center;min-height:54px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:17px;border-radius:10px;text-align:center}
+body{padding-bottom:86px}
+@media (min-width:760px){.fix{display:none}body{padding-bottom:0}}
 /* 6 · footer */
 footer{padding:22px 0 30px;font-size:13px;color:var(--soft);text-align:center;line-height:1.6}
 footer a{color:var(--soft);display:inline-block;padding:6px 2px}
@@ -90,20 +95,20 @@ footer a{color:var(--soft);display:inline-block;padding:6px 2px}
 <body>
 <div class="bar"><div class="wrap"><b>Little Home Books</b><span class="pill">Instant PDF download</span></div></div>
 <div class="cta"><div class="wrap">
-<a class="btn js-buy" href="https://buy.stripe.com/7sY00ceLJ4td5hv5idcs800" data-oferta="receitas" data-goatcounter-click="rubyv2-comprar-topo-receitas"><span><span class="n">Get the Cookbook</span><span class="d">100 recipes</span></span><span class="p">$19.90</span></a>
-<a class="btn hi js-buy" href="https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801" data-oferta="pacote" data-goatcounter-click="rubyv2-comprar-topo-pacote"><span><span class="n">Get Both Books</span><span class="d">cookbook + remedies</span></span><span class="p"><s>$29.80</s>$24.90</span></a>
+<a class="btn js-buy" href="https://buy.stripe.com/7sY00ceLJ4td5hv5idcs800" data-oferta="receitas" data-goatcounter-click="rubyv2-comprar-topo-receitas"><span><span class="n">Get my cookbook</span><span class="d">100 recipes</span></span><span class="p">$19.90</span></a>
+<a class="btn hi js-buy" href="https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801" data-oferta="pacote" data-goatcounter-click="rubyv2-comprar-topo-pacote"><span><span class="n">Get my two books</span><span class="d">cookbook + remedies</span></span><span class="p"><s>$29.80</s>$24.90</span></a>
 </div></div>
 <!-- TESTIMONIALS: add only real buyer quotes here -->
 <main>
 <section class="hero"><div class="wrap">
 <div class="ph"><img src="/ruby-kitchen/img/ruby-segurando-receitas.jpg" alt="Ruby Mae holding her cookbook" width="1027" height="1531" fetchpriority="high"></div>
-<h1>100 recipes, sugar.<em>No wheat flour, no refined sugar.</em></h1>
+<h1>100 recipes for your kitchen after 50.<em>No wheat flour, no refined sugar. You can start with tonight’s supper.</em></h1>
 <div class="more"><p class="lead">Bread, biscuits and Sunday dinner with ingredients from a regular grocery store. The recipes from my videos are inside, with the exact measurements.</p>
 <ul class="grid"><li><b>01</b>Breads &amp; Biscuits</li><li><b>02</b>Breakfast</li><li><b>03</b>Soups &amp; Stews</li><li><b>04</b>Sunday Dinners</li><li><b>05</b>Weeknight Suppers</li><li><b>06</b>Sides</li><li><b>07</b>Sweets</li><li class="all">100 recipes</li></ul></div>
 </div></section>
 <section class="books"><div class="wrap"><h2>Pick your book</h2><div class="cards">
-<article class="card"><div class="top"><img src="/ruby-kitchen/img/produto-receitas-600.jpg" alt="" width="600" height="600" loading="lazy"><span>Ruby Mae’s Kitchen</span></div><div class="in"><p class="eye">Digital cookbook · PDF</p><h3>100 easy home recipes</h3><p class="t">Seven collections, from bread and biscuits to sweets. U.S. cups and spoons, short numbered steps.</p><ul class="tags"><li>116 pages</li><li>Free Pantry Guide</li><li>30-day guarantee</li></ul><a class="go js-buy" href="https://buy.stripe.com/7sY00ceLJ4td5hv5idcs800" data-oferta="receitas" data-goatcounter-click="rubyv2-comprar-card-receitas">Get the cookbook</a><p class="price"><b>$19.90</b> · pay once</p></div></article>
-<article class="card hi"><p class="ban">Includes the free Pantry &amp; Shopping Guide</p><div class="top"><img src="/ruby-kitchen/img/produto-pacote-600.jpg" alt="" width="600" height="600" loading="lazy"><span>Both of Ruby’s books</span></div><div class="in"><p class="eye">Both books · One purchase</p><h3>Cookbook + 80 Natural Remedies</h3><p class="t">The cookbook and the remedies book together, two PDFs. Bought separately: $29.80. You save $4.90.</p><ul class="tags"><li>2 PDF files</li><li>Instant download</li><li>Save $4.90</li></ul><a class="go js-buy" href="https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801" data-oferta="pacote" data-goatcounter-click="rubyv2-comprar-card-pacote">Get both books</a><p class="price"><s>$29.80</s> <b>$24.90</b> · pay once</p></div></article>
+<article class="card"><div class="top"><img src="/ruby-kitchen/img/produto-receitas-600.jpg" alt="" width="600" height="600" loading="lazy"><span>Ruby Mae’s Kitchen</span></div><div class="in"><p class="eye">Digital cookbook · PDF</p><h3>100 easy home recipes</h3><p class="t">Seven collections, from bread and biscuits to sweets. U.S. cups and spoons, short numbered steps.</p><ul class="tags"><li>116 pages</li><li>Free Pantry Guide</li><li>30-day guarantee</li></ul><a class="go js-buy" href="https://buy.stripe.com/7sY00ceLJ4td5hv5idcs800" data-oferta="receitas" data-goatcounter-click="rubyv2-comprar-card-receitas">Get my cookbook</a><p class="price"><b>$19.90</b> · pay once</p></div></article>
+<article class="card hi"><p class="ban">Includes the free Pantry &amp; Shopping Guide</p><div class="top"><img src="/ruby-kitchen/img/produto-pacote-600.jpg" alt="" width="600" height="600" loading="lazy"><span>Both of Ruby’s books</span></div><div class="in"><p class="eye">Both books · One purchase</p><h3>Cookbook + 80 Natural Remedies</h3><p class="t">The cookbook and the remedies book together, two PDFs. Bought separately: $29.80. You save $4.90.</p><ul class="tags"><li>2 PDF files</li><li>Instant download</li><li>Save $4.90</li></ul><a class="go js-buy" href="https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801" data-oferta="pacote" data-goatcounter-click="rubyv2-comprar-card-pacote">Get my two books</a><p class="price"><s>$29.80</s> <b>$24.90</b> · pay once</p></div></article>
 </div></div></section>
 <section class="pick"><div class="wrap"><h2>Which one is for you?</h2><ul>
 <li>You want to bake and cook supper.<a class=" js-buy" href="https://buy.stripe.com/7sY00ceLJ4td5hv5idcs800" data-oferta="receitas" data-goatcounter-click="rubyv2-comprar-qual-receitas">The cookbook · $19.90 →</a></li>
@@ -112,6 +117,7 @@ footer a{color:var(--soft);display:inline-block;padding:6px 2px}
 </ul></div></section>
 </main>
 <footer><div class="wrap"><p>These books are not medical or nutrition advice. The recipes are made without wheat flour but are not certified gluten-free.</p><p><a href="mailto:ruby@littlehomebooks.com">ruby@littlehomebooks.com</a> · <a href="/refunds/">Refunds</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · © 2026 Little Home Books</p></div></footer>
+<div class="fix"><a class="js-buy" href="https://buy.stripe.com/7sYbIUcDB4td4dr8upcs801" data-oferta="pacote" data-goatcounter-click="rubyv2-comprar-fixo-pacote">Get my two books · $24.90</a></div>
 <script>
 /* Mapa da visita (GoatCounter): mesmo mecanismo das paginas atuais, com prefixo proprio da versao v2. */
 (function(){

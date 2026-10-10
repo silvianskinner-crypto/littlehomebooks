@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La Cocina de Mateo · 100 recetas | El Hogar Natural</title>
+<title>80 Remedios Caseros · Mateo Rivas | El Hogar Natural</title>
 <meta name="description" content="Los libros digitales de Mateo Rivas: remedios caseros y cocina de casa.">
 <meta name="theme-color" content="#1E4A3B">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
@@ -71,6 +71,11 @@ a{color:var(--green)}
 .pick ul{list-style:none;display:grid;gap:8px}
 .pick li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:16px}
 .pick a{display:flex;align-items:center;min-height:48px;font-weight:700}
+/* 7 · botão fixo no celular */
+.fix{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(0,0,0,.08);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.fix a{display:flex;align-items:center;justify-content:center;min-height:54px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:17px;border-radius:10px;text-align:center}
+body{padding-bottom:86px}
+@media (min-width:760px){.fix{display:none}body{padding-bottom:0}}
 /* 6 · footer */
 footer{padding:22px 0 30px;font-size:13px;color:var(--soft);text-align:center;line-height:1.6}
 footer a{color:var(--soft);display:inline-block;padding:6px 2px}
@@ -90,28 +95,29 @@ footer a{color:var(--soft);display:inline-block;padding:6px 2px}
 <body>
 <div class="bar"><div class="wrap"><b>El Hogar Natural</b><span class="pill">PDF · Llega a tu correo</span></div></div>
 <div class="cta"><div class="wrap">
-<a class="btn js-buy" href="https://pay.hotmart.com/A107078835J?off=w3f2ekm5&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="remedios" data-goatcounter-click="mateov2-comprar-topo-remedios"><span><span class="n">80 Remedios Caseros</span><span class="d">los remedios de siempre</span></span><span class="p">US$ 9,99</span></a>
-<a class="btn hi js-buy" href="https://pay.hotmart.com/A107871128G?off=w128f5dd&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="recetas" data-goatcounter-click="mateov2-comprar-topo-recetas"><span><span class="n">La Cocina de Mateo</span><span class="d">100 recetas caseras</span></span><span class="p">US$ 14,99</span></a>
+<a class="btn hi js-buy" href="https://pay.hotmart.com/A107078835J?off=w3f2ekm5&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="remedios" data-goatcounter-click="mateov2-comprar-topo-remedios"><span><span class="n">80 Remedios Caseros</span><span class="d">los remedios de siempre</span></span><span class="p">US$ 9,99</span></a>
+<a class="btn js-buy" href="https://pay.hotmart.com/A107871128G?off=w128f5dd&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="recetas" data-goatcounter-click="mateov2-comprar-topo-recetas"><span><span class="n">La Cocina de Mateo</span><span class="d">100 recetas caseras</span></span><span class="p">US$ 14,99</span></a>
 </div></div>
 <!-- TESTIMONIALS: add only real buyer quotes here -->
 <main>
 <section class="hero"><div class="wrap">
 <div class="ph"><img src="/remedios-caseros/mateo.jpg" alt="Mateo Rivas con su libro" width="932" height="1400" fetchpriority="high"></div>
-<h1>100 recetas de casa.<em>Sin harina de trigo, sin azúcar refinada.</em></h1>
-<div class="more"><p class="lead">Pan, postres y comida de casa con ingredientes del súper y pasos cortos. Las recetas de mis videos están aquí, con las medidas exactas.</p>
-<ul class="grid"><li><b>01</b>Panes sin harina de trigo</li><li><b>02</b>Postres</li><li><b>03</b>Básicos hechos en casa</li><li><b>04</b>Desayunos</li><li><b>05</b>Comidas ligeras</li><li><b>06</b>Batidos y bebidas</li><li><b>07</b>Meriendas</li><li class="all">100 recetas</li></ul></div>
+<h1>80 remedios caseros para quien prefiere cuidarse en casa.<em>Con lo que ya tienes en la cocina. Puedes empezar esta misma noche.</em></h1>
+<div class="more"><p class="lead">Los remedios de siempre, ordenados por cómo te sientes, con medidas claras y una nota de seguridad en cada uno. Cada cuerpo responde a su ritmo.</p>
+<ul class="grid"><li><b>01</b>Sueño y calma nocturna</li><li><b>02</b>Digestión después de comer</li><li><b>03</b>Piernas cansadas e hinchadas</li><li><b>04</b>Manos y pies calientes</li><li><b>05</b>Energía por la mañana</li><li><b>06</b>Dolores de cabeza y tensión</li><li><b>07</b>Temporada de resfriados</li><li class="all">80 remedios</li></ul></div>
 </div></section>
 <section class="books"><div class="wrap"><h2>Elige tu libro</h2><div class="cards">
-<article class="card"><div class="top cover"><img src="/remedios-caseros/portada.jpg" alt="" width="600" height="900" loading="lazy"><span>80 Remedios Caseros</span></div><div class="in"><p class="eye">Libro digital · PDF</p><h3>Los remedios de siempre</h3><p class="t">80 remedios caseros en 7 secciones, con medidas claras y una nota de seguridad en cada uno.</p><ul class="tags"><li>102 páginas</li><li>Garantía de 7 días</li><li>Regalo: Plan de 7 días</li></ul><a class="go js-buy" href="https://pay.hotmart.com/A107078835J?off=w3f2ekm5&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="remedios" data-goatcounter-click="mateov2-comprar-card-remedios">Comprar</a><p class="price"><b>US$ 9,99</b> · Pago seguro por Hotmart</p></div></article>
-<article class="card hi"><p class="ban">En la página de pago puedes añadir 80 Remedios Caseros por US$ 5 más, y te llevas los dos libros por US$ 19,99.</p><div class="top cover"><img src="/recetas/portada.jpg" alt="" width="666" height="1000" loading="lazy"><span>La Cocina de Mateo</span></div><div class="in"><p class="eye">Libro de recetas · PDF</p><h3>100 recetas caseras</h3><p class="t">Siete secciones, del pan a las meriendas, sin harina de trigo y sin azúcar refinada.</p><ul class="tags"><li>116 páginas</li><li>Garantía de 7 días</li><li>Regalo: Plan de 7 días</li></ul><a class="go js-buy" href="https://pay.hotmart.com/A107871128G?off=w128f5dd&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="recetas" data-goatcounter-click="mateov2-comprar-card-recetas">Comprar</a><p class="price"><b>US$ 14,99</b> · Pago seguro por Hotmart</p></div></article>
+<article class="card hi"><div class="top cover"><img src="/remedios-caseros/portada.jpg" alt="" width="600" height="900" loading="lazy"><span>80 Remedios Caseros</span></div><div class="in"><p class="eye">Libro digital · PDF</p><h3>Los remedios de siempre</h3><p class="t">80 remedios caseros en 7 secciones, con medidas claras y una nota de seguridad en cada uno.</p><ul class="tags"><li>102 páginas</li><li>Garantía de 7 días</li><li>Regalo: Plan de 7 días</li></ul><a class="go js-buy" href="https://pay.hotmart.com/A107078835J?off=w3f2ekm5&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="remedios" data-goatcounter-click="mateov2-comprar-card-remedios">Quiero mi libro</a><p class="price"><b>US$ 9,99</b> · Pago seguro por Hotmart</p></div></article>
+<article class="card"><p class="ban">En la página de pago puedes añadir 80 Remedios Caseros por US$ 5 más, y te llevas los dos libros por US$ 19,99.</p><div class="top cover"><img src="/recetas/portada.jpg" alt="" width="666" height="1000" loading="lazy"><span>La Cocina de Mateo</span></div><div class="in"><p class="eye">Libro de recetas · PDF</p><h3>100 recetas caseras</h3><p class="t">Siete secciones, del pan a las meriendas, sin harina de trigo y sin azúcar refinada.</p><ul class="tags"><li>116 páginas</li><li>Garantía de 7 días</li><li>Regalo: Plan de 7 días</li></ul><a class="go js-buy" href="https://pay.hotmart.com/A107871128G?off=w128f5dd&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="recetas" data-goatcounter-click="mateov2-comprar-card-recetas">Quiero mi libro</a><p class="price"><b>US$ 14,99</b> · Pago seguro por Hotmart</p></div></article>
 </div></div></section>
 <section class="pick"><div class="wrap"><h2>¿Cuál es para ti?</h2><ul>
-<li>Quieres pan, postres y comida de casa.<a class=" js-buy" href="https://pay.hotmart.com/A107871128G?off=w128f5dd&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="recetas" data-goatcounter-click="mateov2-comprar-cual-recetas">La Cocina de Mateo · US$ 14,99 →</a></li>
 <li>Quieres los remedios de siempre, organizados por cómo te sientes.<a class=" js-buy" href="https://pay.hotmart.com/A107078835J?off=w3f2ekm5&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="remedios" data-goatcounter-click="mateov2-comprar-cual-remedios">80 Remedios Caseros · US$ 9,99 →</a></li>
+<li>Quieres pan, postres y comida de casa.<a class=" js-buy" href="https://pay.hotmart.com/A107871128G?off=w128f5dd&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="recetas" data-goatcounter-click="mateov2-comprar-cual-recetas">La Cocina de Mateo · US$ 14,99 →</a></li>
 <li>Quieres los dos: entra por las recetas y añade los remedios en la página de pago.<a class=" js-buy" href="https://pay.hotmart.com/A107871128G?off=w128f5dd&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="los-dos" data-goatcounter-click="mateov2-comprar-cual-los-dos">Los dos libros · US$ 19,99 →</a></li>
 </ul></div></section>
 </main>
 <footer><div class="wrap"><p>Estos libros no son consejo médico ni nutricional. Las recetas no llevan harina de trigo, pero no están certificadas como sin gluten.</p><p><a href="/el-hogar-natural/contacto/">Contacto</a> · <a href="mailto:mateo@littlehomebooks.com">mateo@littlehomebooks.com</a> · © 2026 El Hogar Natural · Venta procesada de forma segura por Hotmart.</p></div></footer>
+<div class="fix"><a class="js-buy" href="https://pay.hotmart.com/A107078835J?off=w3f2ekm5&checkoutMode=10&offDiscount=LANZAMIENTO" data-oferta="remedios" data-goatcounter-click="mateov2-comprar-fixo-remedios">Quiero mis remedios · US$ 9,99</a></div>
 <script>
 /* Mapa da visita (GoatCounter): mesmo mecanismo das paginas atuais, com prefixo proprio da versao v2. */
 (function(){
