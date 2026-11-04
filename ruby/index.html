@@ -115,6 +115,19 @@ fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1053825911015357&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
+<script>
+/* Pixel Ruby's Kitchen: conta o clique em comprar (InitiateCheckout) antes de ir pra Stripe. */
+(function(){
+  var precos = {'7sY00ceLJ4td5hv5idcs800': ['cookbook', 19.90], '7sYbIUcDB4td4dr8upcs801': ['both-books', 24.90]};
+  document.addEventListener('click', function(ev){
+    var a = ev.target.closest ? ev.target.closest('a[href*="buy.stripe.com"]') : null;
+    if (!a || !window.fbq) return;
+    var id = a.getAttribute('href').split('/').pop().split('?')[0];
+    var p = precos[id] || ['book', 0];
+    fbq('track', 'InitiateCheckout', {content_name: p[0], value: p[1], currency: 'USD'});
+  }, true);
+})();
+</script>
 </head>
 <body>
 <div class="bar"><div class="wrap"><b>Little Home Books</b><a class="cart js-buy" href="https://buy.stripe.com/7sY00ceLJ4td5hv5idcs800" data-oferta="receitas" data-goatcounter-click="rubyv3-comprar-barra-receitas">🛒 Buy now · $19.90</a></div></div>
