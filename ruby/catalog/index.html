@@ -99,6 +99,34 @@ function orderChoice(){ return 'livro'; }
 })();
 
 </script>
+<script>
+/* Etiqueta do anuncio (UTM) ate a Stripe: guarda a origem por 7 dias e coloca nos links de pagamento,
+   com client_reference_id para ver em cada venda se veio do anuncio e de qual video. */
+(function(){
+  var K = 'lhb_utm', keys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  var limpa = function(v){ return String(v).replace(/[^A-Za-z0-9_-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 150); };
+  var got = {}, tem = false;
+  try {
+    var q = new URLSearchParams(location.search);
+    keys.forEach(function(k){ var v = q.get(k); if (v) { got[k] = limpa(v); tem = true; } });
+    if (tem) localStorage.setItem(K, JSON.stringify({t: Date.now(), u: got}));
+    else {
+      var s = JSON.parse(localStorage.getItem(K) || 'null');
+      if (s && s.u && Date.now() - s.t < 7 * 864e5) got = s.u;
+    }
+  } catch (e) {}
+  if (!Object.keys(got).length) return;
+  var ref = limpa([got.utm_source || 'x', got.utm_campaign || '', got.utm_content || ''].filter(Boolean).join('_')).slice(0, 200);
+  document.querySelectorAll('a[href*="buy.stripe.com"]').forEach(function(a){
+    try {
+      var u = new URL(a.href);
+      Object.keys(got).forEach(function(k){ u.searchParams.set(k, got[k]); });
+      u.searchParams.set('client_reference_id', ref);
+      a.href = u.toString();
+    } catch (e) {}
+  });
+})();
+</script>
 <script data-goatcounter="https://littlehomebooks.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
